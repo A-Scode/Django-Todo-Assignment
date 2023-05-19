@@ -1,0 +1,17 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+<h1>Tasks</h1>
+
+<ul>
+    {% for e in category %}
+    <li> {{ e }} - {{ e.description }} </li>
+
+    
+    {% endfor %}
+
+</ul>
+
+
+{% endblock content %}
